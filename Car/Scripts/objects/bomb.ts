@@ -1,7 +1,7 @@
 ﻿/// <reference path="../managers/asset.ts" />
 module objects {
-    // Cloud class
-    export class Cloud {
+    // Bomb class
+    export class Bomb {
         image: createjs.Sprite;
         stage: createjs.Stage;
         game: createjs.Container;

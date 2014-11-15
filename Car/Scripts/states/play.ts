@@ -13,7 +13,7 @@ module states {
         car.update();
 
         for (var count = 0; count < constants.BOMB_NUM; count++) {
-            clouds[count].update();
+            bombs[count].update();
         }
 
         collision.update();
@@ -44,7 +44,7 @@ module states {
 
         // Create multiple clouds
         for (var count = 0; count < constants.BOMB_NUM; count++) {
-            clouds[count] = new objects.Cloud(stage, game);
+            bombs[count] = new objects.Bomb(stage, game);
         }
 
         // Display Scoreboard
