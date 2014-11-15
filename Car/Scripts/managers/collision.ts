@@ -8,13 +8,13 @@ module managers {
     export class Collision {
         // class variables
         private car: objects.Car;
-        private island: objects.Rasberry;
+        private rasberry: objects.Rasberry;
         private bombs = [];
         private scoreboard: objects.Scoreboard;
 
-        constructor(plane: objects.Car, island: objects.Rasberry, clouds, scoreboard: objects.Scoreboard) {
+        constructor(car: objects.Car, rasberry: objects.Rasberry, bombs, scoreboard: objects.Scoreboard) {
             this.car = car;
-            this.island = island;
+            this.rasberry = rasberry;
             this.bombs = bombs;
             this.scoreboard = scoreboard;
         }
@@ -57,12 +57,12 @@ module managers {
             var p2: createjs.Point = new createjs.Point();
             p1.x = this.car.image.x;
             p1.y = this.car.image.y;
-            p2.x = this.island.image.x;
-            p2.y = this.island.image.y;
-            if (this.distance(p1, p2) < ((this.car.height / 2) + (this.island.height / 2))) {
+            p2.x = this.rasberry.image.x;
+            p2.y = this.rasberry.image.y;
+            if (this.distance(p1, p2) < ((this.car.height / 2) + (this.rasberry.height / 2))) {
                 createjs.Sound.play("rasb");
                 this.scoreboard.score += 100;
-                this.island.reset();
+                this.rasberry.reset();
             }
         }
 

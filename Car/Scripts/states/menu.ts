@@ -14,6 +14,18 @@ module states {
         game.removeAllEventListeners();
         currentState = constants.PLAY_STATE;
         changeState(currentState);
+        
+    }
+
+    export function insButtonClicked(event: MouseEvent) {
+
+        var instructionLabel = new objects.Label(stage.canvas.width / 2, 60, "This is a Car Crash game.");
+        var instructionLabel1 = new objects.Label(stage.canvas.width / 2, 100, "Rasberry = 100 points.");
+        var instructionLabel2 = new objects.Label(stage.canvas.width / 2, 140, "Bomb = - 1 live");
+              
+        game.addChild(instructionLabel,instructionLabel1,instructionLabel2);
+
+        
     }
 
     export function menuState() {
@@ -35,16 +47,16 @@ module states {
         stage.cursor = "default";
 
         // Display Game Over
-        gameNameLabel = new objects.Label(stage.canvas.width / 2, 50, "Car Crash");
+        gameNameLabel = new objects.Label(stage.canvas.width / 2, 20, "Car Crash");
         game.addChild(gameNameLabel);
 
         // Display Play Again Button
-        playButton = new objects.Button(stage.canvas.width / 2, 250, "play");
-        insButton = new objects.Button(stage.canvas.width / 2, 180, "instructions");
+        insButton = new objects.Button(stage.canvas.width / 2, 240, "instructions");
+        playButton = new objects.Button(stage.canvas.width / 2, 310, "play");        
         game.addChild(playButton, insButton);
 
+        insButton.addEventListener("click", insButtonClicked)
         playButton.addEventListener("click", playButtonClicked);
-
-        stage.addChild(game);
+        stage.addChild(game);       
     }
 }  

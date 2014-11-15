@@ -5,7 +5,7 @@
         { id: "land", src: "assets/images/land.jpg" },
 
         //sounds
-        { id: "engine", src: "assets/sounds/engine.wav" },
+        { id: "engine", src: "assets/sounds/engine.mp3" },
         { id: "bom", src: "assets/sounds/bom.wav" },
         { id: "rasb", src: "assets/sounds/rasb.wav" }
     ];

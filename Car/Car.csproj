@@ -76,6 +76,7 @@
     <Content Include="assets\images\play.png" />
     <Content Include="assets\images\rasberry.gif" />
     <Content Include="assets\sounds\bom.wav" />
+    <Content Include="assets\sounds\engine.mp3" />
     <Content Include="assets\sounds\engine.wav" />
     <Content Include="assets\sounds\rasb.wav" />
     <Content Include="css\app.css" />
