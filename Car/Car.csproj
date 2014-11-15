@@ -67,6 +67,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\again.png" />
+    <Content Include="assets\images\bomb.png" />
+    <Content Include="assets\images\car.png" />
+    <Content Include="assets\images\instructions.png" />
+    <Content Include="assets\images\land.jpg" />
+    <Content Include="assets\images\play.png" />
+    <Content Include="assets\images\rasberry.gif" />
+    <Content Include="assets\sounds\bom.wav" />
+    <Content Include="assets\sounds\engine.wav" />
+    <Content Include="assets\sounds\rasb.wav" />
     <Content Include="css\app.css" />
     <Content Include="css\normalize.css" />
     <Content Include="index.html" />
@@ -85,7 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="Scripts\constants.ts" />
     <TypeScriptCompile Include="Scripts\game.ts" />
+    <TypeScriptCompile Include="Scripts\managers\asset.ts" />
     <TypeScriptCompile Include="Scripts\typings\createjs-lib\createjs-lib.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\createjs\createjs.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\easeljs\easeljs.d.ts" />
@@ -95,7 +107,7 @@
     <TypeScriptCompile Include="Scripts\typings\tweenjs\tweenjs.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\managers\" />
+    <Folder Include="Scripts\objects\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
