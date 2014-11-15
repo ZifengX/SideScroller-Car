@@ -1,6 +1,6 @@
 ﻿/// <reference path="../managers/asset.ts" />
 module objects {
-    // Plane Class
+    // Car Class
     export class Car {
         image: createjs.Bitmap;
         stage: createjs.Stage;
