@@ -35,12 +35,14 @@ module states {
         stage.cursor = "default";
 
         // Display Game Over
-        gameNameLabel = new objects.Label(stage.canvas.width / 2, 40, "Car Crash");
+        gameNameLabel = new objects.Label(stage.canvas.width / 2, 50, "Car Crash");
         game.addChild(gameNameLabel);
 
         // Display Play Again Button
-        playButton = new objects.Button(stage.canvas.width / 2, 300, "play");
-        game.addChild(playButton);
+        playButton = new objects.Button(stage.canvas.width / 2, 250, "play");
+        insButton = new objects.Button(stage.canvas.width / 2, 180, "instructions");
+        game.addChild(playButton, insButton);
+
         playButton.addEventListener("click", playButtonClicked);
 
         stage.addChild(game);

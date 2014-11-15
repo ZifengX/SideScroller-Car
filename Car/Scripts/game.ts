@@ -26,6 +26,7 @@ var collision: managers.Collision;
 
 var tryAgain: objects.Button;
 var playButton: objects.Button;
+var insButton: objects.Button;
 
 var currentState: number;
 var currentStateFunction;
