@@ -1,8 +1,18 @@
-﻿module managers {
+﻿/**
+    Game Name: Car Crash
+    Name: Zifeng Xu
+    Last Modify by: Zifeng
+    Date Last Modified: 2014, Nov.15th
+    Description: This is a car crash game. Hit the rasberry to earn 100 points. Hit the bomb will lose one live.
+    Rivision History: see https://github.com/ZifengX/SideScroller-Car
+**/
+
+module managers {
     // Image and Sound Manifest;
     var assetManifest = [
         //image
         { id: "land", src: "assets/images/land.jpg" },
+        { id: "logo", src: "assets/images/Logo.png" },
 
         //sounds
         { id: "engine", src: "assets/sounds/engine.mp3" },

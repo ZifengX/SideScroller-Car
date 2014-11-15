@@ -1,4 +1,13 @@
-﻿/// <reference path="../constants.ts" />
+﻿/**
+    Game Name: Car Crash
+    Name: Zifeng Xu
+    Last Modify by: Zifeng
+    Date Last Modified: 2014, Nov.15th
+    Description: This is a car crash game. Hit the rasberry to earn 100 points. Hit the bomb will lose one live.
+    Rivision History: see https://github.com/ZifengX/SideScroller-Car
+**/
+
+/// <reference path="../constants.ts" />
 /// <reference path="../objects/scoreboard.ts" />
 /// <reference path="../objects/car.ts" />
 /// <reference path="../objects/land.ts" />
@@ -46,15 +55,15 @@ module states {
         // Show Cursor
         stage.cursor = "default";
 
-        // Display Game Over
+        // Game Name Label
         gameNameLabel = new objects.Label(stage.canvas.width / 2, 20, "Car Crash");
         game.addChild(gameNameLabel);
 
-        // Display Play Again Button
+        // Buttons
         insButton = new objects.Button(stage.canvas.width / 2, 240, "instructions");
         playButton = new objects.Button(stage.canvas.width / 2, 310, "play");        
         game.addChild(playButton, insButton);
-
+        //Event Listener
         insButton.addEventListener("click", insButtonClicked)
         playButton.addEventListener("click", playButtonClicked);
         stage.addChild(game);       

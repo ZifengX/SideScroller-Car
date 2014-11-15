@@ -1,4 +1,13 @@
-﻿module constants {
+﻿/**
+    Game Name: Car Crash
+    Name: Zifeng Xu
+    Last Modify by: Zifeng
+    Date Last Modified: 2014, Nov.15th
+    Description: This is a car crash game. Hit the rasberry to earn 100 points. Hit the bomb will lose one live.
+    Rivision History: see https://github.com/ZifengX/SideScroller-Car
+**/
+
+module constants {
     // State Machine Constants
     export var MENU_STATE: number = 0;
     export var PLAY_STATE: number = 1;
