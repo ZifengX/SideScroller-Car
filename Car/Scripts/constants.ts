@@ -5,7 +5,7 @@
     export var GAME_OVER_STATE: number = 2;
 
     // Game Constants
-    export var BOMB_NUM: number = 3;
+    export var BOMB_NUM: number = 4;
     export var LABEL_FONT = "40px Consolas";
     export var LABEL_COLOUR = "#FFFF00";
     export var CAR_LIVES = 3;
