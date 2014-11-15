@@ -1,8 +1,21 @@
+/// <reference path="constants.ts" />
+/// <reference path="managers/asset.ts" />
+/// <reference path="objects/bomb.ts" />
+/// <reference path="objects/rasberry.ts" />
+/// <reference path="objects/land.ts" />
+/// <reference path="objects/car.ts" />
+/// <reference path="objects/scoreboard.ts" />
+/// <reference path="objects/label.ts" />
+/// <reference path="objects/button.ts" />
+/// <reference path="managers/collision.ts" />
+/// <reference path="states/play.ts" />
+/// <reference path="states/menu.ts" />
+/// <reference path="states/gameover.ts" />
 //a car crash game
 var stage;
 var game;
 var ocean;
-var plane;
+var car;
 var island;
 var clouds = []; // Clouds array;
 var scoreboard;

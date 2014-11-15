@@ -1,9 +1,9 @@
 ﻿/// <reference path="constants.ts" />
 /// <reference path="managers/asset.ts" />
-/// <reference path="objects/cloud.ts" />
-/// <reference path="objects/island.ts" />
-/// <reference path="objects/ocean.ts" />
-/// <reference path="objects/plane.ts" />
+/// <reference path="objects/bomb.ts" />
+/// <reference path="objects/rasberry.ts" />
+/// <reference path="objects/land.ts" />
+/// <reference path="objects/car.ts" />
 /// <reference path="objects/scoreboard.ts" />
 /// <reference path="objects/label.ts" />
 /// <reference path="objects/button.ts" />
@@ -17,7 +17,7 @@ var stage: createjs.Stage;
 var game: createjs.Container;
 
 var ocean: objects.Ocean;
-var plane: objects.Car;
+var car: objects.Car;
 var island: objects.Island;
 var clouds = []; // Clouds array;
 var scoreboard: objects.Scoreboard;
