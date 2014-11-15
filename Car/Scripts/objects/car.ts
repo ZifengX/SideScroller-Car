@@ -2,7 +2,7 @@
 module objects {
     // Car Class
     export class Car {
-        image: createjs.Bitmap;
+        image: createjs.Sprite;
         stage: createjs.Stage;
         game: createjs.Container;
         engineSound: createjs.SoundInstance;
@@ -11,8 +11,8 @@ module objects {
         constructor(stage: createjs.Stage, game: createjs.Container) {
             this.stage = stage;
             this.game = game;
-            this.image = new createjs.Bitmap(managers.Assets.loader.getResult("car"));
-            this.image.x = 430;
+            this.image = new createjs.Sprite(managers.Assets.atlas, "car");
+            this.image.y = 430;
             this.width = this.image.getBounds().width;
             this.height = this.image.getBounds().height;
             this.image.regX = this.width / 2;
@@ -23,7 +23,7 @@ module objects {
 
 
         update() {
-            this.image.x = this.stage.mouseY;
+            this.image.x = this.stage.mouseX;
         }
         destroy() {
             this.engineSound.stop();
