@@ -16,10 +16,10 @@
 var stage: createjs.Stage;
 var game: createjs.Container;
 
-var ocean: objects.Ocean;
+var land: objects.Land;
 var car: objects.Car;
-var island: objects.Island;
-var clouds = []; // Clouds array;
+var rasberry: objects.Rasberry;
+var bombs = []; // bombs array;
 var scoreboard: objects.Scoreboard;
 
 var collision: managers.Collision;

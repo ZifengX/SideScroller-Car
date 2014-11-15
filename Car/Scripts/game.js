@@ -14,10 +14,10 @@
 //a car crash game
 var stage;
 var game;
-var ocean;
+var land;
 var car;
-var island;
-var clouds = []; // Clouds array;
+var rasberry;
+var bombs = []; // bombs array;
 var scoreboard;
 var collision;
 var tryAgain;
